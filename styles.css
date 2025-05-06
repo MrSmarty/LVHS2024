@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    font-family: "Work Sans", "Arial", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    color: #17468E;
+    text-align: center; 
+}
+
+
+
+h1 {
+	font-size: 5em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+h3 {
+	font-size: 1.5em;
+}
+
+.hidden {
+  display: none;
+}
+
+#submitButton {
+	cursor: pointer;
+  	background-color: #17468E;
+  	color: #FFFFFF;
+  	border: none;
+    border-radius: 4px;
+  	padding: 5px;
+  font-weight: bold;
+  margin: 20px;
+  font-size: 1.5em;
+}
+
+#content {
+    width: auto;
+    margin: 2.5%;
+    padding: 5%;
+    border-width: 6px;
+    border-style: solid;
+    border-color: #FFB501;
+  	border-radius: 2px;
+  	font-size: 1.2em;
+}
+
+#out {
+    display: none;
+}
+
+#error {
+	color: #9B1D20;
+  font-weight: bold;
+}
+
+#success {
+	color: #226F54;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#number {
+	font-size: 2em;
+    width: 3em;
+  	text-align: center;
+  font-weight: bold;
+  border: none;
+  border-bottom: solid;
+  border-bottom-width: 2px;
+}
+
+#groupSelect {
+	border: none;
+    font-size: 1.5em;
+    font-weight: bold;
+    border-bottom: solid;
+    border-bottom-width: 2px;
+    height: 1.25em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Class of 2024</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" media="screen and (max-width: 649px)" href="mobileStyles.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    
+  </head>
+  <body>
+    <div id="content">
+      <h2>LAGO VISTA HIGH SCHOOL</h2>
+      <h1>CLASS OF 2024</h1>
+      <p id="info" class="hidden">
+      	<strong>The Class of 2024 hid 2,024 business cards around the campus of Lago Vista High School!</strong> <br>
+      </p>
+      <div>
+        <h3>Enter your card number here:</h3>
+         <input type="number" id="number" name="number" /> <br> <br>
+        
+       
+        <span id="selectLabel" class="hidden">Who found this card?</span>
+        <select type="dropdown" id="groupSelect" class="hidden" name = "groupSelect">
+        	<option value=" "></option>
+          	<option value="Faculty">Faculty</option>
+          <option value="2025">Class of 2025</option>
+          <option value="2026">Class of 2026</option>
+          <option value="2027">Class of 2027</option>
+          <option value="2028">Class of 2028</option>
+          <option value="2029">Class of 2029</option>
+          <option value="2030">Class of 2030</option>
+          <option value="2030">Class of 2031</option>
+          <option value="2030">Class of 2032</option>
+          <option value="Visitor">Visitor</option>
+        </select> <br>
+         <button onclick="logNum()" id="submitButton">SUBMIT</button>
+      </div>
+      
+      <span id = "error"></span>
+  	  <span id="success"></span>
+      <div id="leftSentence" class="hidden">
+      	<p>
+          <span>There are currently <span id="numLeft">0</span> cards left.</span> Logging your card will send a text to Mr. Taylor letting him know it has been found. 
+        </p>
+        <p>
+        	Each unique number can only be logged once.
+        </p>
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
